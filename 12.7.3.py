@@ -5,6 +5,3 @@ deposit = int(income[0] * money/100), int(income[1] * money/100), int(income[2] 
 
 print(list(deposit))
 print("Maximum possible income -", max(deposit))
-
-
-
