@@ -1,0 +1,39 @@
+spisok = input("Enter the numbers with spaces:\n")
+#spisok = list(map(int, input("Enter the numbers:\n").strip().split()))
+#spisok = sorted(list(map(int, input("Enter the numbers:\n").strip().split())))
+chislo = input("Put any number:\n")
+
+def list_space_remover(a):
+    a = list(a)
+    while a.count(" ") > 0:
+        a.remove(" ")
+    return a
+
+b = sorted(list_space_remover(spisok))
+
+#Устанавливается номер позиции элемента, который меньше введенного пользователем числа,
+#а следующий за ним больше или равен этому числу.
+#Помните, что у вас есть числа, которые могут не соответствовать заданному условию.
+#В этом случае необходимо вывести соответствующее сообщение
+
+def position(b, chislo, left, right):
+    if left > right:  # если левая граница превысила правую,
+        return print("Chisla net")  # значит элемент отсутствует
+    elif chislo > b[-1]:
+        return print("Chisla net")
+    elif chislo == b[0]:
+        return print("Chislo min")
+    elif chislo == b[-1]:
+        return print("Chislo max")
+
+    middle = (right + left) // 2  # находимо середину
+    if b[middle] < chislo <= b[middle + 1]:  # если элемент в середине,
+        return middle  # возвращаем этот индекс
+
+    elif chislo < b[middle]:  # если элемент меньше элемента в середине
+        # рекурсивно ищем в левой половине
+        return position(b, chislo, left, middle - 1)
+    else:  # иначе в правой
+        return position(b, chislo, middle + 1, right)
+
+print(position(b, chislo, 0, len(b) - 1))
