@@ -1,0 +1,15 @@
+Hey!
+
+Here is a Telegram Bot.
+You can find it on Telegram as @GreatExchanger_bot.
+His purpose is converting currencies.
+
+To use the Bot you have to run it on your computer.
+Also you need to install some packages:
+PyTelegramBotAPI
+json
+requests
+
+Thanks and enjoy!
+
+Currency rates taken from CryptoCompare.com
