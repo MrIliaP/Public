@@ -86,7 +86,8 @@ def test_get_api_key_for_valid_user_invalid_password(email=valid_email, password
     assert 'key' not in result
     #5
 def test_add_wrong_format_photo_of_pet(pet_photo='images/wrong_format.HEIC'):
-    """Метод загрузки фото неподходящего формата. Метод делает запрос к API сервера и возвращает статус запроса"""
+    """Метод загрузки фото неподходящего формата. Метод делает запрос к API сервера и возвращает статус запроса.
+    Ожидаемый статус 400"""
     _, auth_key = pf.get_api_key(valid_email, valid_password)
     _, my_pets = pf.get_list_of_pets(auth_key, "my_pets")
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
