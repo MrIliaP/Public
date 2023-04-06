@@ -1,0 +1,110 @@
+/* Set default font styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set background color and padding for header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Set styles for h1 and h2 in header */
+header h1, header h2 {
+  margin: 0;
+}
+
+/* Style header links */
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Set styles for main sections */
+.section {
+  padding: 40px;
+}
+
+/* Set styles for h2 in sections */
+.section h2 {
+  margin-top: 0;
+}
+
+/* Style section lists */
+.section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Set styles for experience section */
+.experience {
+  padding-top: 60px;
+}
+
+/* Style experience section headings */
+.experience h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/* Set styles for list items in experience section */
+.experience ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.experience li {
+  margin-bottom: 10px;
+}
+
+/* Set styles for links in experience section */
+.experience a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid #333;
+}
+
+.experience a:hover {
+  background-color: #333;
+  color: #fff;
+}
+#content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+      }
+
+      #content.show {
+        max-height: 500px;
+        transition: max-height 0.5s ease-in;
+      }
+
+.hidden {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+      }
+
+      .visible {
+        max-height: 500px;
+        transition: max-height 0.5s ease-in;
+      }
