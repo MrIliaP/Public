@@ -7,15 +7,6 @@ emailListItem.addEventListener('click', () => {
   alert('Email: pozhilenkov@gmail.com');
 });
 
-// Get the "About" section element
-const aboutSection = document.querySelector('.section:nth-of-type(1)');
-
-// Add a click event listener to the "About" section
-aboutSection.addEventListener('click', () => {
-  // Toggle the visibility of the paragraph element within the "About" section
-  const aboutParagraph = aboutSection.querySelector('p');
-  aboutParagraph.classList.toggle('hidden');
-});
 
 function changeBackgroundColor() {
   const colorSelect = document.getElementById("colorSelect");
@@ -23,8 +14,26 @@ function changeBackgroundColor() {
   document.body.style.backgroundColor = selectedColor;
 }
 
-function toggleVisibility(id) {
+function toggleVisibility(id, buttonId) {
         const element = document.getElementById(id);
         element.classList.toggle("visible");
         element.classList.toggle("hidden");
+        const button = document.getElementById(buttonId);
+        if (element.classList.contains("visible")) {
+          button.textContent = "Hide";
+        } else {
+          button.textContent = "Show Content";
+        }
+      }
+
+function toggleVisibility(id, buttonId) {
+        const element = document.getElementById(id);
+        element.classList.toggle("visible");
+        element.classList.toggle("hidden");
+        const button = document.getElementById(buttonId);
+        if (element.classList.contains("visible")) {
+          button.textContent = "Hide Content";
+        } else {
+          button.textContent = "Show Content";
+        }
       }

@@ -33,8 +33,8 @@
 
     <section class="section">
       <h2>Skills &amp; Tools</h2>
-		<button onclick="toggleVisibility('content1')">Show</button>
-    	<div id="content1" class="hidden">
+		<button id="toggleButton1" onclick="toggleVisibility('content1', 'toggleButton1')">Hide</button>
+    	<div id="content1" class="visible">
 			<ul>
 				<li>Software Manual Testing(Functional/UI Testing, Test Design, Test Cases,  Bug Reports)</li>
 				<li>Software Automation Testing(Selenium WebDriver, Page Object pattern, Pytest, Requests)</li>
@@ -56,8 +56,9 @@
 	</section>
 
     <section class="section">
-      <h2>Education</h2><button onclick="toggleVisibility('content2')">Show</button>
-    	<div id="content2" class="hidden">
+      <h2>Education</h2>
+		<button id="toggleButton2" onclick="toggleVisibility('content2', 'toggleButton2')">Hide</button>
+    	<div id="content2" class="visible">
 		  <ul>
 			<li>SkillFactory Online School - Automation QA with Python. NOVEMBER 2021 - JULY 2022</li>
 			<li>Far Eastern State University - Bachelor of Business Administration - BBA.</li>
@@ -67,8 +68,8 @@
 
     <section class="section">
       <h2>Experience</h2>
-		<button onclick="toggleVisibility('content3')">Show</button>
-    	<div id="content3" class="hidden">
+		<button id="toggleButton3" onclick="toggleVisibility('content3', 'toggleButton3')">Hide</button>
+    	<div id="content3" class="visible">
 		<h4>SkillFactory Online School / Automation QA with Python (Student). NOVEMBER 2021 - PRESENT.</h4>
     <ul>
       <li>Learning software manual testing theory and putting it into practice by writing test cases for web services using test design techniques like boundary values analysis and equivalence partitioning and opening bug reports in Jira.</li>
