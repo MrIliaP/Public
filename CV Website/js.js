@@ -25,15 +25,3 @@ function toggleVisibility(id, buttonId) {
           button.textContent = "Show Content";
         }
       }
-
-function toggleVisibility(id, buttonId) {
-        const element = document.getElementById(id);
-        element.classList.toggle("visible");
-        element.classList.toggle("hidden");
-        const button = document.getElementById(buttonId);
-        if (element.classList.contains("visible")) {
-          button.textContent = "Hide Content";
-        } else {
-          button.textContent = "Show Content";
-        }
-      }
