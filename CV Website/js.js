@@ -7,10 +7,6 @@ emailListItem.addEventListener('click', () => {
   alert('Email: pozhilenkov@gmail.com');
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e55e77ba46cbd8f53f6a730c675490bbbd0b2254
 
 function changeBackgroundColor() {
   const colorSelect = document.getElementById("colorSelect");
@@ -22,7 +18,6 @@ function toggleVisibility(id, buttonId) {
         const element = document.getElementById(id);
         element.classList.toggle("visible");
         element.classList.toggle("hidden");
-<<<<<<< HEAD
         const button = document.getElementById(buttonId);
         if (element.classList.contains("visible")) {
           button.textContent = "Hide";
@@ -42,6 +37,3 @@ function toggleVisibility(id, buttonId) {
           button.textContent = "Show Content";
         }
       }
-=======
-      }
->>>>>>> e55e77ba46cbd8f53f6a730c675490bbbd0b2254
