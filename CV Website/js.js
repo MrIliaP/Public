@@ -1,11 +1,10 @@
-// Get the "Email" list item element
-const emailListItem = document.querySelector('li:nth-of-type(1)');
 
-// Add a click event listener to the "Email" list item
-emailListItem.addEventListener('click', () => {
-  // Display an alert with the email address
-  alert('Email: pozhilenkov@gmail.com');
-});
+
+function copyEmail() {
+        const email = 'pozhilenkov@gmail.com';
+        navigator.clipboard.writeText(email);
+        alert(`Email "${email}" has been copied to the clipboard.`);
+      }
 
 
 function changeBackgroundColor() {
